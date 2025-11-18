@@ -30,5 +30,5 @@ app.post("/api/dishes", async (req, res) => {
   res.status(201).json(data[0]);
 });
 
-const PORT = process.env.PORT ||
+const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`✅ Servidor en Servidor corriendo en puerto${PORT}`));
